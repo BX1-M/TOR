@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج الخصوصية - شبيه TOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التقدم -->
+    <div class="progress-bar"></div>
+
+    <!-- زر الوضع الليلي -->
+    <button id="theme-toggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="logo">
+            <span style="color: #7D4698">Privacy</span>App
+        </div>
+        <nav class="desktop-nav">
+            <a href="#features"><i class="fas fa-shield-alt"></i> المميزات</a>
+            <a href="#download"><i class="fas fa-download"></i> التنزيل</a>
+            <a href="#about"><i class="fas fa-info-circle"></i> حولنا</a>
+        </nav>
+        <button class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- القائمة الجانبية للجوال -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#features"><i class="fas fa-shield-alt"></i> المميزات</a>
+        <a href="#download"><i class="fas fa-download"></i> التنزيل</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> حولنا</a>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <section class="hero">
+            <h1 data-aos="fade-down">تصفح <span style="color: #7D4698">الإنترنت</span> بخصوصية</h1>
+            <p data-aos="fade-up">برنامجنا يوفر لك تشفيرًا قويًا وإخفاء الهوية مثل TOR ولكن بسرعة أفضل!</p>
+            <a href="download.html" id="download-btn" data-aos="zoom-in">حمل الآن مجانًا</a>
+
+            
+            <!-- عداد التنزيلات -->
+            <div class="download-counter" data-aos="zoom-in">
+                <i class="fas fa-download"></i>
+                <span id="download-count">2</span> تنزيل
+            </div>
+            
+            <div class="tor-logo" data-aos="zoom-in">
+                <div class="tor-circle"></div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 data-aos="fade-right">لماذا نختلف عن الآخرين؟</h2>
+            <div class="feature-cards">
+                <div class="card" data-aos="flip-left">
+                    <i class="fas fa-lock"></i>
+                    <h3>تشفير متقدم</h3>
+                    <p>حماية بياناتك من التجسس والاختراق.</p>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>إخفاء الهوية</h3>
+                    <p>تصفح دون الكشف عن موقعك الحقيقي.</p>
+                </div>
+                <div class="card" data-aos="flip-right">
+                    <i class="fas fa-bolt"></i>
+                    <h3>سريع وخفيف</h3>
+                    <p>لا يؤثر على سرعة اتصالك.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <h2 data-aos="fade-left">اختر نظام التشغيل</h2>
+            <div class="download-options">
+                <button class="os-btn" data-os="windows" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-windows"></i> Windows
+                </button>
+                <button class="os-btn" data-os="mac" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-apple"></i> Mac
+                </button>
+                <button class="os-btn" data-os="linux" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-linux"></i> Linux
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>مرتضى العفيفي جميع الحقوق محفوظة.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
